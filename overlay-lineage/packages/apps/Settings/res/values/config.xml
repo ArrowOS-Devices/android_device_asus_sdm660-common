@@ -22,6 +22,9 @@
     -->
     <integer name="config_fingerprintSensorLocation">0</integer>
 
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage">org.lineageos.settings.doze/org.lineageos.settings.doze.DozeSettingsActivity</string>
+
     <!-- Battery Health enable -->
     <bool name="config_supportBatteryHealth">true</bool>
 
