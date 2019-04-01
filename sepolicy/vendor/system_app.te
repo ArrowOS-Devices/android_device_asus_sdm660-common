@@ -10,3 +10,7 @@ allow system_app sysfs_vibrator:dir search;
 allow system_app sysfs_vibrator:file { read write };
 allow system_app sysfs_vibrator:file open;
 allow system_app sysfs_vibrator:file getattr;
+
+# Spectrum
+allow system_app spectrum_prop:property_service set;
+get_prop(system_app, spectrum_prop);

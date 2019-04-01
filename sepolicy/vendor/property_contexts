@@ -11,3 +11,6 @@ persist.vendor.runin.fp                       u:object_r:vendor_fingerprint_prop
 
 # NFC
 ro.hq.support.nfc                             u:object_r:nfc_sensors_prop:s0
+
+# Spectrum
+persist.spectrum.profile                      u:object_r:spectrum_prop:s0
