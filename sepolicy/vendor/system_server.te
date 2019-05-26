@@ -14,3 +14,6 @@ allow system_server exported_camera_prop:file { read };
 allow system_server sysfs:file { getattr };
 
 allow system_server vendor_display_notch_prop:file { getattr  map  open  read };
+
+# Smart charging
+allow system_server sysfs_battery_supply:file rw_file_perms;
