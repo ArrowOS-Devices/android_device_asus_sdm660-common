@@ -14,3 +14,7 @@ allow system_app sysfs_vibrator:file getattr;
 # Spectrum
 allow system_app spectrum_prop:property_service set;
 get_prop(system_app, spectrum_prop);
+
+# HAL3
+allow system_app camera_prop:property_service set;
+get_prop(system_app, camera_prop);
