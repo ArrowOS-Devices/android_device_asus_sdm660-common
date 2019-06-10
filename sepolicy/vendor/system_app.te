@@ -18,3 +18,7 @@ get_prop(system_app, spectrum_prop);
 # HAL3
 allow system_app camera_prop:property_service set;
 get_prop(system_app, camera_prop);
+
+# Torch
+allow system_app sysfs_leds:dir search;
+allow system_app sysfs_leds:file { open getattr write };
