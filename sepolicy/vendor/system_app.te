@@ -22,3 +22,6 @@ get_prop(system_app, camera_prop);
 # Torch
 allow system_app sysfs_leds:dir search;
 allow system_app sysfs_leds:file { open getattr write };
+
+# USB Fastcharge
+allow system_app sysfs:file { getattr open read write };
