@@ -456,6 +456,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-# ZenfoneParts
+# ZenParts
 PRODUCT_PACKAGES += \
-    ZenfoneParts
+    ZenParts
