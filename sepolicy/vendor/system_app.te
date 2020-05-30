@@ -43,3 +43,8 @@ allow system_app sysfs_fcharge:file { open read getattr write };
 
 # FPS Info
 allow system_app sysfs_fps:file rw_file_perms;
+
+# GPU/CPU Boosts
+set_prop(system_app, boosts_prop);
+get_prop(system_app, boosts_prop);
+allow system_app boosts_prop:property_service set;
