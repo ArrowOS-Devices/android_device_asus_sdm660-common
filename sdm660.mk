@@ -355,7 +355,8 @@ PRODUCT_PACKAGES += \
     init.btmac.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
-    init.qcom.usb.sh
+    init.qcom.usb.sh \
+    init.zenparts.sh
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -365,7 +366,8 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
     init.target.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    init.zenparts.rc
 
 # Seccomp
 PRODUCT_COPY_FILES += \
