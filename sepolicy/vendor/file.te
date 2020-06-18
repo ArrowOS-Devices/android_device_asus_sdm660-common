@@ -29,3 +29,6 @@ type sysfs_fcharge, sysfs_type, fs_type;
 
 # Torch Brightness Control
 type sysfs_tbrightness, sysfs_type, fs_type;
+
+# Touchboost
+type sysfs_touchboost, sysfs_type, fs_type;

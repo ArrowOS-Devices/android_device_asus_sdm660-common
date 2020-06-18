@@ -44,6 +44,10 @@ on boot
   chown system system /sys/module/mdss_fb/parameters/backlight_dimmer
   chmod 0660 /sys/module/mdss_fb/parameters/backlight_dimmer
 
+# Touchboost
+  chown system system /sys/module/msm_performance/parameters/touchboost
+  chmod 0660 /sys/module/msm_performance/parameters/touchboost
+
 # GPU/CPU Boost based on ronax's MayhemParts
 
     chown system system /sys/devices/soc/5000000.qcom,kgsl-3d0/devfreq/5000000.qcom,kgsl-3d0/adrenoboost
