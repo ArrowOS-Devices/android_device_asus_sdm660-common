@@ -139,6 +139,11 @@ vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 
+# Dirac - from Xiaomi
+vendor/lib/soundfx/libdirac.so
+vendor/lib/libDiracAPI_SHARED.so
+vendor/etc/diracmobile.config
+
 # DPM
 product/bin/dpmd
 product/etc/dpm/dpm.conf
