@@ -1,0 +1,2 @@
+allow radio cnd:binder { call };
+allow radio qcom_ims_prop:file { read open getattr };

@@ -1,0 +1,2 @@
+allow bootanim userspace_reboot_exported_prop:file { read open getattr };
+allow bootanim sysfs_kgsl:dir { search };

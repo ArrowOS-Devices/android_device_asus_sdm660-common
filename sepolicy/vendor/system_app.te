@@ -56,3 +56,5 @@ allow system_app sysfs_msm_perf:dir { search };
 set_prop(system_app, boosts_prop);
 get_prop(system_app, boosts_prop);
 allow system_app boosts_prop:property_service set;
+
+allow system_app proc_vmallocinfo:file { read open getattr };

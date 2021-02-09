@@ -4,3 +4,5 @@ allow hal_camera_default sysfs_sensors:lnk_file r_file_perms;
 
 set_prop(hal_camera_default, vendor_camera_prop)
 set_prop(hal_camera_default, vendor_video_prop)
+
+allow hal_camera_default sensors_dbg_prop:file { open getattr read };
