@@ -67,6 +67,20 @@ vendor/lib/libaudcal.so
 vendor/lib/libqtigef.so
 vendor/lib/soundfx/libasphere.so
 
+# Audio - from ASUS_X01BD-WW-16.2017.2011.105-user
+system/etc/permissions/audiosphere.xml|3c6d8f14bd99e52a424282fd5d0a5b9b06485dea
+system/framework/audiosphere.jar|4450751aad4c268c686fe9bc93da595e14c009d9
+vendor/lib/hw/audio.primary.sdm660.so|4a6c6ae9bf99b0cbf805d6a0f66b93a076222ba8
+vendor/lib/libaudio_log_utils.so|c0187996e4aa81683518645d1e1931afea5491de
+vendor/lib/libaudioalsa.so|61d75736da88920ec71bcc721f34ed04127aac3a
+vendor/lib/libaudioparsers.so|4d074631277ad63092d4f0f6995c827351f89690
+vendor/lib/libdrc.so|acd6cee28271d3b09ffd580926d12c0aa71121d6
+vendor/lib/libsurround_3mic_proc.so|f46a16389fae9a67d232552cdc5dba567d72d795
+vendor/lib/libtinycompress_vendor.so|9a851877b2ad6b256a377a0c63ea181ac6a0293d
+vendor/lib/soundfx/libqcbassboost.so|9327128a592d24def9a6e323c9a85541a2052c1a
+vendor/lib/soundfx/libqcreverb.so|bf57090dbba900b6a3325513b4b6d4bdc6eaf2cd
+vendor/lib/soundfx/libqcvirt.so|050274cac0a518494d0bc12d288722a50670ed95
+
 # Bluetooth - from SLD_sprout 11-RKQ1.210607.001-00WW_3_490-release-keys
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|07d96d0d3c4a500b14ea3c97e02b9eb5ee2bbc4d
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
