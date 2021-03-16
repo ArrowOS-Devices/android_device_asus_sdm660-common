@@ -470,3 +470,8 @@ service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
 on property:sys.boot_completed=1
     # Enable EAS
     write /proc/sys/kernel/sched_energy_aware 1
+
+on boot
+# Smart Charging permissions
+  chown system system /sys/class/power_supply/battery/input_suspend
+  chmod 0666 /sys/class/power_supply/battery/input_suspend
