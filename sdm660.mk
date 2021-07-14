@@ -249,6 +249,10 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# NVRAM
+PRODUCT_PACKAGES += \
+    nvram_btwifi.rc
+
 # OEM Unlock reporting
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.oem_unlock_supported=1
