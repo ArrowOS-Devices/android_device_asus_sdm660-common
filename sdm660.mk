@@ -447,7 +447,7 @@ PRODUCT_VENDOR_VERITY_PARTITION=/dev/block/bootdevice/by-name/vendor
 $(call inherit-product, build/target/product/verity.mk)
 
 # Speed profile services and wifi-service to reduce RAM and storage
-PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := everything
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 
 # Thermal
