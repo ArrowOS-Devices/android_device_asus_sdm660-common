@@ -640,7 +640,4 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>qccvndhal</instance>
         </interface>
     </hal> <!-- QCC HAL Service -->
-    <sepolicy>
-        <version>30.0</version>
-    </sepolicy>
 </manifest>
