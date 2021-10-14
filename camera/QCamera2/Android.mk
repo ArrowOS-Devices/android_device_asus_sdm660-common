@@ -42,7 +42,7 @@ LOCAL_SRC_FILES += \
         HAL3/QCamera3CropRegionMapper.cpp \
         HAL3/QCamera3StreamMem.cpp
 
-LOCAL_CFLAGS := -Wall -Wextra -Werror
+LOCAL_CFLAGS := -Wall -Wextra -Werror -Wno-compound-token-split-by-macro
 LOCAL_CFLAGS += -DFDLEAK_FLAG
 LOCAL_CFLAGS += -DMEMLEAK_FLAG
 #HAL 1.0 source
@@ -207,7 +207,7 @@ LOCAL_CFLAGS += -DSUPPORT_ONLY_HAL3
 endif
 
 ifneq (,$(filter $(strip $(TARGET_KERNEL_VERSION)),4.14 4.19))
-    ifneq (,$(filter sdm660 msm8937 msm8953, $(TARGET_BOARD_PLATFORM)))
+    ifeq ($(TARGET_BOARD_PLATFORM), sdm660)
         LOCAL_CFLAGS += -DSUPPORT_ONLY_HAL3
     endif
 endif
