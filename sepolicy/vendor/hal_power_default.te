@@ -1,5 +1,6 @@
 # Allow powerhal to read/write to dt2w node
 allow hal_power_default proc_tpd_gesture:file rw_file_perms;
+typeattribute hal_power_default mlstrustedsubject;
 
 r_dir_file(hal_power_default, sysfs_graphics)
 
@@ -8,13 +9,21 @@ allow hal_power_default { sysfs_devfreq sysfs_kgsl }:{ file lnk_file } rw_file_p
 allow hal_power_default sysfs_devices_system_cpu:file rw_file_perms;
 allow hal_power_default sysfs:file { read open getattr };
 allow hal_power_default latency_device:chr_file rw_file_perms;
+allow hal_power_default proc:{ file lnk_file } rw_file_perms;
 allow hal_power_default sysfs_battery_saver:dir r_dir_perms;
 allow hal_power_default sysfs_battery_saver:file rw_file_perms;
 
 allow hal_power_default proc:file { write };
 r_dir_file(hal_power_default, sysfs_graphics)
 
+# Set scheduling info for apps (for adpf)
+allow hal_power_default appdomain:process { getsched setsched };
+allow hal_power_default self:capability sys_nice;
+
 # To dump
 allow hal_power_default cgroup:file read;
+
+# Set scheduling info for system_server (for adpf)
+allow hal_power_default system_server:process setsched;
 
 set_prop(hal_power_default, vendor_power_prop)
