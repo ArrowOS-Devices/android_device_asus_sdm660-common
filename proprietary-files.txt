@@ -669,7 +669,6 @@ product/etc/permissions/telephony_product_privapp-permissions-qti.xml|42f4553b61
 -system_ext/app/SimContact/SimContact.apk|bdd9d9a7accd4cda9c71bd8abce6de8a7a451226
 -system_ext/app/SimSettings/SimSettings.apk|1a82c3325e959dff402d979d2092650395e0df79
 -system_ext/app/atfwd/atfwd.apk|1224a0ea61601cf002262aa5f042a68e55e30c3b
--system_ext/app/datastatusnotification/datastatusnotification.apk|2fcf2e570818eb317de45f42c0a674db875b6ee4
 -system_ext/app/embms/embms.apk|e30c32f9e2e5ee2580ff788c76a8969b45199a96
 -system_ext/app/imssettings/imssettings.apk|8b47c43d56228dcce93cc8c07c6ceb08cb3d2fe5
 -system_ext/app/remoteSimLockAuthentication/remoteSimLockAuthentication.apk|3ec7ba081138560b1d0dd3ba78fd3898127a76a7
@@ -878,14 +877,6 @@ system_ext/lib64/libimscamera_jni.so|217354bfe6d1e1736572218b1a34468937544350
 system_ext/lib64/libimsmedia_jni.so|c804adc4d7224303a53f6270e6c1cf9319008a05
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|7157c5a2852683df0a50a588a09b7e5a0c5688da
 -system_ext/priv-app/ims/ims.apk|230315f38d7c2fc6c9d83bb6ec1f8f59254090cf
-
-# Latency - from LA.UM.9.12.r1-10800-SMxx50.0
-vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|c4e96e63eef450f1f2c1db6c96654d7cb940d2ae
-
-# PD - from LA.UM.9.12.r1-10800-SMxx50.0
-vendor/bin/pd-mapper|39d55e771fd5f59a94e9bbc94a16e93b8b325ba2
-vendor/lib64/libpdmapper.so|ad1638f4461d6c133b066305d567f156775c9471
-vendor/lib64/libpdnotifier.so|4c3437efb631e34e653bed2722b0ea97a29d3f82
 
 # Sensors
 vendor/bin/sensors.qti
