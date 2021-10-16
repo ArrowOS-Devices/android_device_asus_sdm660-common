@@ -695,6 +695,11 @@ function sdm660_sched_interactive_dcvs() {
 
 function sdm660_sched_schedutil_dcvs() {
 
+# Modify /data/system/storage.xml inorder to fix recovery getting stuck at its logo
+    rm -f /data/system/storage.xml
+    touch /data/system/storage.xml
+    chattr +i /data/system/storage.xml
+
     if [ $KernelVersionA -ge 4 ] && [ $KernelVersionB -ge 19 ]; then
         # configure governor settings for little cluster
         echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
