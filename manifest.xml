@@ -598,16 +598,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </hal>
     <!-- Misc - Specific to Hals/versions used in this tree 
          i.e: Different from CAF -->
-    <!-- VR -->
-    <hal format="hidl">
-        <name>android.hardware.vr</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IVr</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <!-- biometrics --> 
     <hal format="hidl">
         <name>android.hardware.biometrics.fingerprint</name>
