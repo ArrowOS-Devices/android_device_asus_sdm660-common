@@ -2,5 +2,11 @@
   {
     "repository":  "android_kernel_asus_X01BD",
     "target_path": "kernel/asus/sdm660"
+  },
+  {
+    "remote": "github",
+    "repository": "SonalSingh18/android_packages_apps_GCamGOPrebuilt",
+    "target_path": "packages/apps/GCamGOPrebuilt",
+    "branch": "arrow-12.0"
   }
 ]
