@@ -120,7 +120,11 @@ BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_IMAGE_NAME  := Image.gz-dtb
 
+ifeq ($(COMPILE_GCC),true)
+TARGET_KERNEL_NEW_GCC_COMPILE := true
+else
 TARGET_KERNEL_CLANG_COMPILE := true
+endif
 TARGET_KERNEL_SOURCE := kernel/asus/sdm660
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
