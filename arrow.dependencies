@@ -20,5 +20,11 @@
     "repository": "mvaisakh/gcc-arm",
     "target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi",
     "branch": "gcc-master"
+  },
+  {
+    "remote": "arrow-gitlab",
+    "repository": "android_prebuilts_clang_host_linux-x86_clang-r437112b",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-r437112b",
+    "branch": "master"
   }
 ]
