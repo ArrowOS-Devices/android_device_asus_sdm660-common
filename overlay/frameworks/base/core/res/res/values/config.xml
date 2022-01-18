@@ -299,4 +299,7 @@
     -->
     <integer name="config_keyChordPowerVolumeUp">1</integer>
 
+    <!-- List of comma separated package names for which we the system will not show crash, ANR,
+         etc. dialogs. -->
+    <string name="config_appsNotReportingCrashes">com.google.android.tts</string>
 </resources>
