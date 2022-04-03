@@ -80,7 +80,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    GCamGOPrebuilt
+    GCamGOPrebuilt-V2
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0 \
