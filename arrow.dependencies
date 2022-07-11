@@ -5,7 +5,7 @@
   },
   {
     "remote": "github",
-    "repository": "SonalSingh18/android_packages_apps_GCamGOPrebuilt",
+    "repository": "ArrowOS-Devices/android_packages_apps_GCamGOPrebuilt",
     "target_path": "packages/apps/GCamGOPrebuilt",
     "branch": "arrow-12.1"
   },
