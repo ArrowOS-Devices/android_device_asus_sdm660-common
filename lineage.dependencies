@@ -8,5 +8,11 @@
     "repository": "ArrowOS-Devices/android_packages_apps_GCamGOPrebuilt",
     "target_path": "packages/apps/GCamGOPrebuilt",
     "branch": "arrow-13.0"
+  },
+  {
+    "remote": "gitlab",
+    "repository": "GhostMaster69-dev/cosmic-clang",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-cosmic",
+    "branch": "master"
   }
 ]

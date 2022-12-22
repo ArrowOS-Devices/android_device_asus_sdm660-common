@@ -107,6 +107,12 @@ BOARD_KERNEL_IMAGE_NAME  := Image.gz-dtb
 
 TARGET_KERNEL_SOURCE := kernel/asus/sdm660
 
+ifeq ($(CUSTOM_CLANG),true)
+TARGET_KERNEL_CLANG_VERSION := cosmic
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-cosmic
+TARGET_KERNEL_ADDITIONAL_FLAGS := AR=llvm-ar AS=llvm-as NM=llvm-nm LD=ld.lld OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump OBJSIZE=llvm-size READELF=llvm-readelf STRIP=llvm-strip HOSTAR=llvm-ar HOSTAS=llvm-as HOSTNM=llvm-nm HOSTLD=ld.lld
+endif
+
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
